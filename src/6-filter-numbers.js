@@ -1,8 +1,6 @@
 export const filterNumbers = (array, largerThan) => {
-  
-/* array.forEach(element => {
-  let newArray = array.filter(element<largerThan)
- 
- });
- return newArray */
+  const filterLowerThan = (value) => {
+    return value <= largerThan
+  }
+  return array.filter(filterLowerThan);
 }
